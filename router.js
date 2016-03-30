@@ -22,7 +22,7 @@ Router.fn.extend({
     // 执行 pm.init()
     action: function(id){
         var pages = [];
-        pm.pageArray.forEach(function(item){
+        pm.pages.forEach(function(item){
             pages.push(['<gem id="lincoapp-page-', item.name, '"></gem>'].join(''))
         })
         $('.pages').html(pages.join('\n'));
